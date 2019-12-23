@@ -19,6 +19,10 @@ config/name="CycloPi_Menu_basic"
 run/main_scene="res://Ejecutable/Menu/Dios/Escena_Dios.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
