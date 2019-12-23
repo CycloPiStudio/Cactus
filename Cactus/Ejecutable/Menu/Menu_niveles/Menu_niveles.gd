@@ -9,8 +9,8 @@ func _ready():
 	if Nivel_juegar == 0:
 		get_node("Botones_niveles/Boton_nivel2").hide()
 		
-	if get_node("/root/Nodo_Dios").Nivel_jugar == 1:
-		get_node("Botones_niveles/Boton_nivel2").show()
+#	if get_node("/root/Nodo_Dios").Nivel_jugar == 1:
+#		get_node("Botones_niveles/Boton_nivel2").show()
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
