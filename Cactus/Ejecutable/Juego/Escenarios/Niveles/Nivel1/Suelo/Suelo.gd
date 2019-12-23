@@ -4,8 +4,9 @@ extends Spatial
 #var suelo 
 var preCactus = load("res://Ejecutable/Juego/Escenarios/Niveles/modelos/cactus/cactus.tscn")
 var Cactus
-#var punto_Cactus = Vector3()
-#var matr_Cactus
+var punto_Cactus = Vector3()
+var matr_Cactus
+var cont_Cactus = 0
 
 var b = 1.1
 var punto = Vector3()
@@ -13,6 +14,9 @@ var matr_punt
 var punto2 = Vector3()
 var matr_punt2
 var limite = 28
+
+var rng = RandomNumberGenerator.new()
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,13 +42,13 @@ func _ready():
 
 
 func _on_Timer_timeout():
+	
 	if punto.x > limite:
 		punto.x = -limite
 		
-		Cactus = preCactus.instance()
-		get_node("Scene Root").add_child(Cactus)
-		get_node("Scene Root/Position3D").get_global_transform()
-		Cactus.set_global_transform(get_node("Scene Root/Position3D").get_global_transform())
+		
+		meter_cactus()
+
 	
 	if punto2.x > limite:
 		punto2.x = -limite
@@ -58,3 +62,20 @@ func _on_Timer_timeout():
 	get_node("Scene Root2").set_global_transform(matr_punt2)
 #
 	pass # Replace with function body.
+
+func meter_cactus():
+	cont_Cactus += 1
+	for i in range(cont_Cactus-1):
+		print("pongo","cactus",i)
+		Cactus = preCactus.instance()
+		get_node("Scene Root").add_child(Cactus)
+		print("nuevo cactus", get_node("Scene Root/Position3D").get_global_transform()[3].z)
+		punto_Cactus = get_node("Scene Root/Position3D").get_global_transform()[3]
+		rng.randomize()
+		print(rng.randf_range(0.0, 3.6))
+		punto_Cactus.z = punto_Cactus.z + rng.randf_range(0.0, 3.6)
+		punto_Cactus.x = punto_Cactus.x + ((i+1))
+		matr_Cactus = get_node("Scene Root/Position3D").get_global_transform()
+		matr_Cactus[3] = punto_Cactus
+		Cactus.set_global_transform(matr_Cactus)
+	
