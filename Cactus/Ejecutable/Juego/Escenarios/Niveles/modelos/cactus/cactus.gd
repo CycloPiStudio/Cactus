@@ -17,10 +17,16 @@ func _on_Timer_timeout():
 
 
 func _on_Area_area_entered(area):
-	print(" has pinchao")
-	Menu =preMenu.instance()
-	get_node("/root/Nodo_Dios").add_child(Menu)
-	get_node("/root/Nodo_Dios/Music_menu").play()
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	get_parent().get_parent().get_parent().queue_free()
+	print("quien ha estrao")
+	print(area.name)
+	if area.name == "AreaPersonaje":
+		print(" has pinchao")
+		Menu =preMenu.instance()
+		get_node("/root/Nodo_Dios").add_child(Menu)
+		get_node("/root/Nodo_Dios/Music_menu").play()
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		get_parent().get_parent().get_parent().queue_free()
+		
+	
+
 	pass # Replace with function body.
