@@ -7,7 +7,7 @@ var Cactus
 #var punto_Cactus = Vector3()
 #var matr_Cactus
 
-var b = 1
+var b = 1.1
 var punto = Vector3()
 var matr_punt
 var punto2 = Vector3()
@@ -44,14 +44,6 @@ func _on_Timer_timeout():
 		Cactus = preCactus.instance()
 		get_node("Scene Root").add_child(Cactus)
 		get_node("Scene Root/Position3D").get_global_transform()
-#		get_child(Cactus)
-#		punto_Cactus = punto
-#		punto_Cactus.x = punto_Cactus.x + 60
-#		matr_Cactus = matr_punt
-#		matr_Cactus[0] = Vector3(1,0,0)
-#		matr_Cactus[1] = Vector3(0,1,0)
-#		matr_Cactus[2] = Vector3(0,0,1)
-#		matr_Cactus[3] = matr_punt[3]
 		Cactus.set_global_transform(get_node("Scene Root/Position3D").get_global_transform())
 	
 	if punto2.x > limite:
