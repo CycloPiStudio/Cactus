@@ -12,6 +12,9 @@ autostart = true
 
 [node name="Scene Root" parent="." instance=ExtResource( 2 )]
 
+[node name="Position3D" type="Position3D" parent="Scene Root"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.4471, 0, 0 )
+
 [node name="Scene Root2" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 0 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
