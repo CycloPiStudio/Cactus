@@ -10,8 +10,8 @@ transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 
 [node name="Scene Root" parent="." instance=ExtResource( 1 )]
 
-[node name="Area" type="Area" parent="."]
+[node name="AreaPersonaje" type="Area" parent="."]
 
-[node name="CollisionShape" type="CollisionShape" parent="Area"]
+[node name="CollisionShape" type="CollisionShape" parent="AreaPersonaje"]
 transform = Transform( 0.245075, 0, 0, 0, 0.837045, 0, 0, 0, 0.837045, -0.187031, 1.17344, 0.289217 )
 shape = SubResource( 1 )
