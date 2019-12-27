@@ -25,4 +25,22 @@ margin_right = 951.0
 margin_bottom = 148.0
 custom_fonts/font = SubResource( 1 )
 text = " Volver"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Botones/Entrar"]
+margin_top = 139.0
+margin_right = 389.0
+margin_bottom = 449.0
+text = "Créditos:
+Música
+\"Tyrant\" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+\"Raving Energy (faster)\" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+Mecánicas:
+# Plantilla Cyclo pi 26 -12 -2019 nueva Game Jam
+# https://github.com/CycloPiStudio/Cactus/tree/ff9f75457a117ba2b517da8b52cd6229c09ea9ee"
 [connection signal="pressed" from="Botones/Entrar" to="." method="_on_Entrar_pressed"]
