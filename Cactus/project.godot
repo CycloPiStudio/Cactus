@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="CycloPi_Menu_basic"
+config/name="CycloPi: 4. La partícula antigame en el acelerador de electrones"
 run/main_scene="res://Ejecutable/Menu/Dios/Escena_Dios.tscn"
 config/icon="res://icon.png"
 
