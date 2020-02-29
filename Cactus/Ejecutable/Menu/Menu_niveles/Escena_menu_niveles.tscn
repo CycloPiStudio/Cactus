@@ -35,5 +35,10 @@ margin_bottom = 272.0
 custom_fonts/font = SubResource( 1 )
 text = "Nivel 2"
 clip_text = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 [connection signal="pressed" from="Botones_niveles/Boton_nivel1" to="." method="_on_Boton_nivel1_pressed"]
 [connection signal="pressed" from="Botones_niveles/Boton_nivel2" to="." method="_on_Boton_nivel2_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

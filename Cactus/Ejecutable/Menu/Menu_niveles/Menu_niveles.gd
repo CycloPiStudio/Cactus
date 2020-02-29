@@ -2,6 +2,8 @@ extends Node
 
 var preNivel_juegar_1 = preload("res://Ejecutable/Juego/Escenarios/Niveles/Nivel1/Nivel1.tscn")
 var preNivel_juegar_2 = preload("res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/Nivel2.tscn")
+var preMenu = load("res://Ejecutable/Menu/Menu_entrar/Menu_entrar.tscn")
+var Menu
 var Nivel_juegar = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -35,3 +37,10 @@ func cargar_nivel(preNivel_juegar):
 	get_node("/root/Nodo_Dios").Nivel_jugar = 1
 	$".".queue_free()
 	pass 
+
+
+func _on_Timer_timeout():
+	Menu =preMenu.instance()
+	get_node("/root/Nodo_Dios").add_child(Menu)
+	$".".queue_free()
+	pass # Replace with function body.
