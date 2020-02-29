@@ -7,7 +7,7 @@ var tiempo = 100
 
 func _on_Timer_timeout():
 	My_timer += 1
-	get_node("Label").set_text(str(tiempo-My_timer))
+	get_node("Label").set_text(str(tiempo-My_timer) + " s")
 	if My_timer > tiempo:
 		Menu =preMenu.instance()
 		get_node("/root/Nodo_Dios").add_child(Menu)
