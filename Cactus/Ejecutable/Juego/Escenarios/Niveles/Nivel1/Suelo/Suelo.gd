@@ -2,7 +2,7 @@ extends Spatial
 
 # Declare member variables here. Examples:
 #var suelo 
-var preCactus = load("res://Ejecutable/Juego/Escenarios/Niveles/modelos/cactus/cactus.tscn")
+var preCactus = load("res://Ejecutable/Juego/Enemigo/Enemigo 1/Enemigo.tscn")
 var Cactus
 var punto_Cactus = Vector3()
 var matr_Cactus
