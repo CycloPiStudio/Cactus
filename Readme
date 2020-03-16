@@ -1,13 +1,15 @@
 2020-03-08: Fallos y mejoras
-- Game Over
-- Musica en bucle pantalla
-- Musica en bucle menú 
 
-- Malo carpetas
+- Controlar la carga de 3D
+- Game Over
 - Ponerle puntos
 - Luces materiales
 
 
+Fallos y mejoras
+- Musica en bucle pantalla
+- Musica en bucle menú 
+- Malo carpetas
 - Suelo se ve mal
 
 https://github.com/CycloPiStudio/Cactus/tree/94eab54472825d2b5e22f076b7f293c6430e5651
@@ -68,8 +70,4 @@ http://creativecommons.org/licenses/by/4.0/
 Licensed under Creative Commons: By Attribution 4.0 License
 http://creativecommons.org/licenses/by/4.0/
 
-
-#
-#
-#
 #
