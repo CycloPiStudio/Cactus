@@ -1,12 +1,13 @@
 2020-03-08: Fallos y mejoras
 
-- Controlar la carga de 3D
-- Game Over
+
 - Ponerle puntos
 - Luces materiales
 
 
 Fallos y mejoras ejecutados
+- Controlar la carga de 3D
+- Game Over
 - Musica en bucle pantalla
 - Musica en bucle menú 
 - Malo carpetas
