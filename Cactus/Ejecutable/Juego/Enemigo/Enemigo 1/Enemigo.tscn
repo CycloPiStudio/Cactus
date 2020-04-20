@@ -12,6 +12,8 @@ script = ExtResource( 1 )
 [node name="Scene Root" parent="." instance=ExtResource( 2 )]
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
 
 [node name="AreaEnemigo" type="Area" parent="."]
 
