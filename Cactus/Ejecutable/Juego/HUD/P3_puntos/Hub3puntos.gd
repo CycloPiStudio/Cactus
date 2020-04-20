@@ -12,5 +12,11 @@ func _ready():
 	
 
 func _on_Timer_timeout():
-	get_node("Label").set_text(str(get_node("/root/Nodo_Dios").puntosDios) + " puntos")
+	actualizar_puntos()
 	pass # Replace with function body.
+
+func actualizar_puntos():
+	get_node("Label").set_text(str(get_node("/root/Nodo_Dios").puntosDios) + " puntos")
+
+func combo():
+	print("combo")
