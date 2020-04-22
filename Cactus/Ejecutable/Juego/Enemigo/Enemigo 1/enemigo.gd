@@ -2,7 +2,7 @@ extends Spatial
 
 var preMenu = load("res://Ejecutable/Menu/Game Over/game_over.tscn")
 var Menu
-var cont
+#var cont
 
 # Called when the node enters the scene tree for the first time.
 
