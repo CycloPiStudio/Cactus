@@ -25,7 +25,7 @@ func _on_Timer_timeout():
 		energia = get_node("rayos-blanca/Luz-verdosa").energy
 		energia -= 0.2
 		get_node("rayos-blanca/Luz-verdosa").energy = energia
-		print ("energia en la parte if", energia)
+#		print ("energia en la parte if", energia)
 		if contTime > (contTimeTotal):
 			timer = get_node("Timer").stop()
 			contTime = 0 # pa bucle infinito
@@ -35,5 +35,5 @@ func _on_Timer_timeout():
 		energia += 0.2
 		get_node("rayos-blanca/Luz-verdosa").energy = energia
 #		print(get_node("rayos-blanca/Luz-verdosa").energy)
-		print ("energia en la parte del else", energia)
+#		print ("energia en la parte del else", energia)
 	pass # Replace with function body.
