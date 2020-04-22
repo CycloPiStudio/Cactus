@@ -17,6 +17,8 @@ func _on_Timer_timeout():
 
 func actualizar_puntos():
 	get_node("Label").set_text(str(get_node("/root/Nodo_Dios").puntosDios) + " puntos")
+#	get_node("Luz-rayos").escala_energia()
 
 func combo():
+	get_node("Luz-rayos").escala_energia()
 	print("combo")
