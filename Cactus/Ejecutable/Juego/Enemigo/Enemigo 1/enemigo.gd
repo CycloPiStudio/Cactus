@@ -16,6 +16,7 @@ func _on_Timer_timeout():
 	get_node("/root/Nodo_Dios").sumaPuntos(100)
 #	print(
 	get_node("/root/Nodo_Dios/Game_play/Hub3puntos").actualizar_puntos()
+	get_node("/root/Nodo_Dios/Game_play/Hub3puntos").combo()
 	queue_free()
 	pass # Replace with function body.
 
