@@ -60,8 +60,8 @@ func _on_Timer_timeout():
 	
 	# puntos tiempo:
 	contMs += 0.1
-	print("milisegundos: " , contMs ," ms")
-	print("puntos " , get_node("/root/Nodo_Dios").puntosDios)
+#	print("milisegundos: " , contMs ," ms")
+#	print("puntos " , get_node("/root/Nodo_Dios").puntosDios)
 	if contMs > segundosXpuntos*contPot:
 		contPot +=1
 		get_node("/root/Nodo_Dios").sumaPuntos(10) 
@@ -79,7 +79,7 @@ func meter_cactus():
 		print("nuevo cactus", get_node("Scene Root/Position3D").get_global_transform()[3].z)
 		punto_Cactus = get_node("Scene Root/Position3D").get_global_transform()[3]
 		rng.randomize()
-		print(rng.randf_range(0.0, 3.6))
+		rng.randf_range(0.0, 3.6)
 		punto_Cactus.z = punto_Cactus.z + rng.randf_range(0.0, 3.6)
 		punto_Cactus.x = punto_Cactus.x + ((i+1))
 		matr_Cactus = get_node("Scene Root/Position3D").get_global_transform()
