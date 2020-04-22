@@ -5,11 +5,11 @@ var preNivel_juegar_1 = preload("res://Ejecutable/Juego/Escenarios/Niveles/Nivel
 var Nivel_juegar = 0
 # var b = "text"
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	print(("la puta"))
-	print(get_node("Timer1"))
-	pass # Replace with function body.
+## Called when the node enters the scene tree for the first time.
+#func _ready():
+#	print(("la puta"))
+#	print(get_node("Timer1"))
+#	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -32,6 +32,6 @@ func cargar_nivel(preNivel_juegar):
 
 func _on_Timer1_timeout():
 	cargar_nivel(preNivel_juegar_1)
-	print("sala timer")
+#	print("sala timer")
 #	pass # Replace with function body.
 	pass # Replace with function body.
