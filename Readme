@@ -1,13 +1,20 @@
+Punto control pantalla carga congelada:
+
+https://github.com/CycloPiStudio/Cactus/tree/79f86232069b4d9c7acb678881c9a9bd64250fca
+
+
 2020-03-08: Fallos y mejoras
 
 
 - Ponerle puntos
 - Luces materiales
 - Lista de modelos e imágenes
+- Controlar la carga de 3D
+
 
 
 Fallos y mejoras ejecutados
-- Controlar la carga de 3D
+
 - Game Over
 - Musica en bucle pantalla
 - Musica en bucle menú 
